@@ -1,0 +1,18 @@
+<?component name="recaptcha" templateURI="recaptcha.zul"?>
+<zk  xmlns:ca="client/attribute">
+	<grid id="form" apply="org.zkoss.support.smalltalk.recaptcha.RecaptchaComposer" width="400px">
+		<columns>
+			<column>Form</column>
+		</columns>
+		<rows>
+			<row>
+				<cell>
+				<recaptcha sitekey="6Lcj5AYTAAAAAHp_ATdyZcWkMi7lzO_JZPMhYj4S"/>
+				</cell>
+			</row>
+			<row>
+				<button id="submit" disabled="true">submit</button>
+			</row>
+		</rows>
+	</grid>
+</zk>

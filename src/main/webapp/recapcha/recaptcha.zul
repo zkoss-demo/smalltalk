@@ -1,0 +1,12 @@
+<zk xmlns:c="client" xmlns:x="xhtml">
+	<script type="text/javascript" src='https://www.google.com/recaptcha/api.js' defer="true" />
+	<script><![CDATA[ 
+		function afterValidate(response){
+			zk.Widget.$('$recaptcha').fire('onUserRespond',{'response':response}, {toServer:true}); 
+		} 
+	]]>
+	</script>
+	<x:div id="recaptcha" class="g-recaptcha" 
+		data-sitekey="${sitekey}"
+		data-callback="afterValidate" />		
+</zk>
