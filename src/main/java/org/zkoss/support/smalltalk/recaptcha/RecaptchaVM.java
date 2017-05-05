@@ -21,6 +21,7 @@ public class RecaptchaVM extends SelectorComposer<Component> {
 		}else{
 			String errorCode = result.get("error-codes").toString();
 			//log or show error
+			Clients.showNotification(errorCode);
 		}
 	}
 	
